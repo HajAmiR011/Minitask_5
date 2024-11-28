@@ -1,0 +1,101 @@
+header {
+  .head {
+    padding: 0 30px;
+    align-items: flex-start;
+  }
+
+  nav {
+    padding: 0 30px;
+    justify-content: flex-start;
+    .mega {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .megaIcon {
+        display: block !important;
+        margin-top: 7px;
+        svg {
+          fill: white;
+        }
+      }
+      .megaCon {
+        display: none;
+        padding: 10px;
+        position: absolute;
+        height: 300px;
+        box-shadow: 2px 2px 25px #2b2b2b;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        z-index: 2;
+        top: 100%;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        .pipe {
+          width: 1px;
+          height: 250px;
+          background-color: #2b2b2b;
+        }
+        .imageCon {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          img {
+            border-radius: 5px;
+            transition: 300ms;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+        .link-l {
+          width: 275px !important;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          div {
+            width: 100% !important;
+            a {
+              all: unset;
+              display: block;
+              color: black !important;
+              width: inherit !important;
+              transition: 500ms;
+              padding: 10px 2 !important;
+              cursor: pointer;
+            }
+            &:hover a {
+              background-color: #333;
+              color: whitesmoke !important;
+            }
+          }
+        }
+        .link-r {
+          width: 275px !important;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          div {
+            width: 100% !important;
+            a {
+              all: unset;
+              display: block;
+              width: inherit !important;
+              color: black !important;
+              transition: 500ms;
+              padding: 10px 2 !important;
+              cursor: pointer;
+            }
+            &:hover a {
+              background-color: #333;
+              color: whitesmoke !important;
+            }
+          }
+        }
+      }
+      &:hover .megaCon {
+        display: flex;
+      }
+    }
+  }
+}

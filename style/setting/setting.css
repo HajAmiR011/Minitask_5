@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: iran;
+}
+@font-face {
+  font-family: iran;
+  src: url("../../public/fonts/iranyekanwebmedium.2d4f96e5.woff");
+}
+:root {
+  --animation: animationCss;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@keyframes animationCss {
+  0% {
+    background-color: #2b2b2b;
+  }
+  33% {
+    background-color: blue;
+  }
+  66% {
+    background-color: #c36166;
+  }
+  100% {
+    background-color: maroon;
+  }
+}
+button {
+  animation: var(--animation) 2500ms linear infinite alternate;
+  color: aliceblue;
+  cursor: pointer;
+}
